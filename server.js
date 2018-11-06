@@ -111,7 +111,7 @@ app.get('/pagecount', function (req, res) {
 
 app.get('/cleardb', function (req, res) {
   //clear the db cos I want to, it will be initialized again on the next pagecount call
-  db.collection.remove({});
+  db.counts.drop();
 });
 
 // error handling
