@@ -111,7 +111,7 @@ app.get('/pagecount', function (req, res) {
 
 app.get('/cleardb', function (req, res) {
   //clear the db cos I want to, it will be initialized again on the next pagecount call
-  dbo.collection("counts").drop(function(err, count) {
+  db.collection("counts").drop(function(err, count) {
     if (err) {
       console.log("Error dropping count collection. Message:\n"+err);
       res.send('Count reset');
