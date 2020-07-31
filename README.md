@@ -1,51 +1,10 @@
 
 
-<!-- toc -->
-
-- [Node.js sample app on OpenShift!](#nodejs-sample-app-on-openshift)
-  * [OpenShift Origin v3 setup](#openshift-origin-v3-setup)
-    + [Running a virtual machine with Vagrant](#running-a-virtual-machine-with-vagrant)
-    + [Running a virtual machine managed by minishift](#running-a-virtual-machine-managed-by-minishift)
-    + [Starting a Docker container](#starting-a-docker-container)
-    + [Downloading the Binary](#downloading-the-binary)
-    + [Running an Ansible playbook](#running-an-ansible-playbook)
-  * [Creating a project](#creating-a-project)
-  * [Creating new apps](#creating-new-apps)
-    + [Create a new app from source code (method 1)](#create-a-new-app-from-source-code-method-1)
-    + [Create a new app from a template (method 2)](#create-a-new-app-from-a-template-method-2)
-    + [Build the app](#build-the-app)
-    + [Deploy the app](#deploy-the-app)
-    + [Configure routing](#configure-routing)
-    + [Create a new app from an image (method 3)](#create-a-new-app-from-an-image-method-3)
-    + [Setting environment variables](#setting-environment-variables)
-    + [Success](#success)
-    + [Pushing updates](#pushing-updates)
-  * [Debugging](#debugging)
-  * [Web UI](#web-ui)
-  * [Looking for help](#looking-for-help)
-  * [Compatibility](#compatibility)
-  * [License](#license)
-
-<!-- tocstop -->
 
 ## Node.js sample app on OpenShift!
 -----------------
 
 This example will serve a welcome page and the current hit count as stored in a database.
-
-### OpenShift Origin v3 setup
-
-There are four methods to get started with OpenShift v3:
-
-  - Running a virtual machine with Vagrant
-  - Running a virtual machine managed by minishift
-  - Starting a Docker container
-  - Downloading the binary
-  - Running an Ansible playbook
-
-#### Running a virtual machine with Vagrant
-
-One option is to use the Vagrant all-in-one launch as described in the [OpenShift Origin All-In-One Virtual Machine](https://www.okd.io/vm/). This option works on Mac, Windows and Linux, but requires that you install [Vagrant](https://www.vagrantup.com/downloads.html) running [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 
 #### Running a virtual machine managed by minishift
 
@@ -62,7 +21,6 @@ Red Hat periodically publishes OpenShift Origin Server binaries for Linux, which
 #### Running an Ansible playbook
 
 Outlined as the [Advanced Installation](https://docs.okd.io/latest/install_config/install/advanced_install.html) method for production environments, OpenShift Origin is also installable via Ansible playbook made available on the GitHub [openshift-ansible](https://github.com/openshift/openshift-ansible) repo.
-
 
 ### Creating a project
 
