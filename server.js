@@ -117,7 +117,7 @@ app.get('/cleardb', function (req, res) {
       res.send('Count reset');
     }
     else {
-      console.log("collection count dropped");
+      console.log("collection count dropped- now");
     }
   });
 });
